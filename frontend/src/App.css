@@ -1,0 +1,91 @@
+.border-purple-table {
+  border-left: 0.2rem solid #5a287d;
+  border-color: #5a287d;
+  border-width: 0.2rem;
+}
+
+.table-head-style {
+  --bs-table-color: #5a287d;
+  --bs-table-bg: #eeeff3;
+  --bs-border-radius: 25px;
+}
+
+.custom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1050;
+}
+
+.bullet-dot.dot-added::before {
+  content: "\2022";
+  color: purple;
+  margin-right: 0.3rem;
+}
+
+.page-active {
+  font-weight: bold;
+  background-color: rgba(235, 235, 235, 0.986);
+  color: #5a287d !important;
+  border-radius: 10px;
+}
+
+.custom-chip-active {
+  background-color: #e5fbef;
+  color: #21a56c;
+  border-radius: 10px;
+}
+
+.custom-chip-inactive {
+  background-color: #ff39391b;
+  color: #ff3939;
+  border-radius: 10px;
+}
+
+.dot-icon {
+  font-size: 6px;
+}
+
+.bg-purple {
+  background-color: #5a287d;
+  color: white;
+}
+
+.text-purple {
+  color: #5a287d;
+}
+
+.bg-purple:hover,
+.bg-purple:active {
+  background-color: #451a64;
+  color: white;
+}
+
+.dropdown-size {
+  width: 150px;
+}
+
+.card::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* Optional: This will hide the track */
+}
+
+.bg-main-page {
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
